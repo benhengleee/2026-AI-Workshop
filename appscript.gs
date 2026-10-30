@@ -32,13 +32,17 @@ function doPost(e) {
     try {
       const sheet = getSignupSheet_(spreadsheet);
       sheet.getRange('D2:D').setNumberFormat('@');
+      const row = sheet.getLastRow() + 1;
       sheet.appendRow([
         postData.name || '',
         postData.email || '',
         postData.unit || '',
-        String(postData.phone || ''),
+        '',
         postData.title || ''
       ]);
+      sheet.getRange(row, 4)
+        .setNumberFormat('@')
+        .setValue("'" + String(postData.phone || ''));
     } finally {
       lock.releaseLock();
     }
