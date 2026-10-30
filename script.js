@@ -1,4 +1,4 @@
-const GOOGLE_APPS_SCRIPT_URL = "PASTE_YOUR_DEPLOYED_WEB_APP_URL_HERE";
+const GOOGLE_APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbw2vHhnTrMAtJTT4UZs9NkJazGzLzsD8valt9n7rzXaERZGLEn0TatuafNC8w5qH7g1JA/exec";
 
 const form = document.getElementById("registerForm");
 const statusBox = document.getElementById("formStatus");

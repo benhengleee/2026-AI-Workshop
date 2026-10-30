@@ -10,10 +10,10 @@
 
 ## Google Apps Script
 
-1. 在 Apps Script 編輯器執行 `initializeSpreadsheet`，並完成 Google 授權。
-2. 部署為 Web 應用程式，設定為「以部署者身分執行」並允許任何人存取。
-3. 將 Web App URL 填入 `script.js` 的 `GOOGLE_APPS_SCRIPT_URL`。
-4. 試算表會以 `2026 AI 工作坊` 命名，首列為標題，電話欄設定為文字格式。
+- 報名服務：[Google Apps Script Web App](https://script.google.com/macros/s/AKfycbw2vHhnTrMAtJTT4UZs9NkJazGzLzsD8valt9n7rzXaERZGLEn0TatuafNC8w5qH7g1JA/exec)
+- 服務以部署者身分執行，並允許任何人存取，供 GitHub Pages 表單提交使用。
+- 試算表會以 `2026 AI 工作坊` 命名，首列為標題，電話欄設定為文字格式。
+- 若需重新部署，請在 Apps Script 編輯器執行 `initializeSpreadsheet`，完成授權後部署為「網頁應用程式」。
 
 ## 站點內容
 
