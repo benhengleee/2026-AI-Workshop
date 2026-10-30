@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2026 AI 工作坊</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="row title-row">
+        <div class="title-badge">2026 AI 工作坊</div>
+      </header>
+
+      <section class="row hero-row">
+        <img src="cover.jpg" alt="2026 AI 工作坊 活動封面" class="cover-image" />
+      </section>
+
+      <main class="row main-row">
+        <section class="content-panel panel">
+          <h2>活動內容</h2>
+          <ul class="schedule-list">
+            <li><span class="time">8:00</span><span>報到</span></li>
+            <li><span class="time">9:00</span><span>場次一</span></li>
+            <li><span class="time">10:00</span><span>break time</span></li>
+            <li><span class="time">10:30</span><span>場次二</span></li>
+            <li><span class="time">11:30</span><span>Q&A</span></li>
+            <li><span class="time">12:00</span><span>活動結束</span></li>
+          </ul>
+        </section>
+
+        <section class="form-panel panel">
+          <h2>立即報名</h2>
+          <form id="registerForm" novalidate>
+            <div class="field-group">
+              <label for="name">姓名</label>
+              <input id="name" name="name" type="text" placeholder="請輸入姓名" required />
+            </div>
+
+            <div class="field-group">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="請輸入 Email" required />
+            </div>
+
+            <div class="field-group">
+              <label for="unit">單位</label>
+              <input id="unit" name="unit" type="text" placeholder="請輸入單位" />
+            </div>
+
+            <div class="field-group">
+              <label for="phone">電話</label>
+              <input id="phone" name="phone" type="tel" placeholder="請輸入電話" required />
+            </div>
+
+            <div class="field-group">
+              <label for="title">職稱</label>
+              <input id="title" name="title" type="text" placeholder="請輸入職稱" />
+            </div>
+
+            <button type="submit" class="submit-button">送出報名</button>
+            <p id="formStatus" class="form-status" aria-live="polite"></p>
+          </form>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
